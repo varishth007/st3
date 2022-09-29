@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body 
+{
+    background: linear-gradient(90deg, #ee7752, #e73c7e);
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 5px;
+    
+
+}
+.outer
+{
+    width: 100%;
+    display: flex;
+    height: 100vh   
+}
+.container
+{
+    width: fit-content;
+    background-color: aliceblue;
+    padding: 60px;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+}
+h1
+{
+    font-family: 'Pacifico', cursive;;
+}
+
+input
+{
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    background-color: rgb(226, 219, 219);
+    padding: 7px;
+    width: 90%;
+}
+
+.box
+{
+    display: flex;
+    width: 54%;
+    justify-content: space-between;
+    margin: auto;
+}
+.sub
+{
+    width: 30%;
+}
+.sub:hover
+{
+    
+    background: linear-gradient(90deg, #ee7752, #e73c7e);
+    
+}
+:root {
+    --color: #4fb83c;
+}
+
+.wrapper {
+    padding: 1 rem 0;
+    filter: url('#goo');
+}
+
+.button {
+    
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 10px;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: 'Pacifico', cursive;
+    margin-top: 10px;
+}
+
+.button:before,
+.button:after {
+    width: 3.4em;
+    height: 1.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 100%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+
+

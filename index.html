@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sty.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="outer">
+
+        <div class="container">
+            <h1>Personal Info</h1>
+    
+            <div>
+                <input type="text" name="name" id="names" placeholder="Name">
+            </div>
+            <div>
+                <input type="tel" name="tele" id="" placeholder="Phone-Number">
+            </div>
+            <div>+
+                <input type="email" name="e-mail" id="" placeholder="e-mail">
+            </div>
+            <div>
+                <input type="text" name="fname" id="" placeholder="Father's Name">
+            </div>
+            <div class="wrapper">
+                <a  id="start" class="button" href="/quiz.html">Start</a>
+            </div>
+    
+        </div>
+    </div>
+    <script>
+        		window.onload = function () {
+				var auto = setTimeout(function () { autoRefresh(); }, 40);
+
+				function submitform() {
+					window.location.href = "FirstPage.html";
+					alert('Times up!! \n Submitted Successfully');
+					document.forms["myForm"].submit();
+				}
+
+				function autoRefresh() {
+					clearTimeout(auto);
+					auto = setTimeout(function () { submitform(); autoRefresh(); }, 10000);
+				}
+			}
+    </script>
+
+</body>
+</html>
